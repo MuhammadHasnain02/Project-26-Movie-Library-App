@@ -7,7 +7,7 @@
     <title>Movie Library</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -21,7 +21,7 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #0F171E; /* Prime Video background */
+            background-color: #0F171E;
         }
         .no-scrollbar::-webkit-scrollbar {
             display: none;
@@ -43,24 +43,24 @@
             src="logo.png">
         
         <label class="text-gray-100 border border-[#00A8E1]/40 bg-[#1A242F] shadow-lg rounded-full pl-5 py-[11px] space-x-2">
-            <i class="fa-solid fa-magnifying-glass text-[#34CFFF]"></i>
+            <i class="fa-solid fa-magnifying-glass text-[#bc378e]"></i>
 
             <input type="text" id="searchInp" placeholder="Search movies..." 
             class="w-[480px] bg-transparent placeholder:text-gray-300 placeholder:text-[14px] focus:outline-none">
 
             <span id="searchBtn" 
-                class="bg-[#00A8E1] text-white px-5 py-3 rounded-r-full hover:bg-[#34CFFF] transition hover:cursor-pointer">
+                class="bg-[#bc378e] text-white px-5 py-3 rounded-r-full hover:bg-[#c53b95] transition hover:cursor-pointer">
                 Search
             </span>
         </label>
 
-        <button class="text-[#34CFFF]"><i class="fa-solid fa-gear text-[22px] transition ease-in-out duration-300 hover:scale-110"></i></button>
+        <button class="text-[#c73a95]"><i class="fa-solid fa-gear text-[22px] transition ease-in-out duration-300 hover:scale-110"></i></button>
 
     </nav>
 
     <!-- Cards Section -->
     <section class="flex flex-row justify-center m-14">
-        <div class="grid grid-cols-12 gap-5 mx-8" id="prodCards"></div>
+        <div class="grid grid-cols-12 gap-6 mx-10" id="movieCards"></div>
     </section>
 
     <!-- Footer -->
